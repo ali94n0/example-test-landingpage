@@ -1,5 +1,6 @@
 .container img {
   width: 300px;
+  height: 40vh;
 }
 
 .container {
@@ -8,6 +9,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 10px rgb(189, 189, 189);
+  width: 32%;
 }
 
 .container h3 {
@@ -32,7 +34,8 @@
   border-top: 1px silver solid;
 }
 .quantity img{
-  width : 1.5rem;
+  width :1.5rem;
+  height: fit-content;
   cursor: pointer;
 }
 .quantity span{

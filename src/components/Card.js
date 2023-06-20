@@ -25,12 +25,17 @@ class Card extends Component {
   };
 
   render() {
-    const { image, name, cost } = this.props;
+    const { image, title, price } = this.props;
+    const { quantity } = this.state;
     return (
       <div className={styles.container}>
         <img src={image} alt="smart phone" />
-        <h3>{name}</h3>
-        <p>{cost}</p>
+        <h3>{title}</h3>
+        <p>
+          {quantity
+            ? `${price} * ${quantity} = ${price * quantity}$`
+            : `${price}$`}
+        </p>
         <div className={styles.quantity}>
           <img
             className={this.state.quantity ? "" : styles.disable}
